@@ -30,6 +30,13 @@ class LinkedListTest {
         assertFalse(lk.isEmpty());
     }
     @Test
+    public void testAddRemoveAdd() {
+        lk = lk.getTail();
+        assertTrue(lk.isEmpty(), "one empty");
+        lk.insertHead(0);
+        assertEquals(0, lk.getHead(), "Check remove then add 0");
+    }
+    @Test
     public void TestIterator(){
         lk.insertHead("mama");
         lk.insertHead("tounssi");
